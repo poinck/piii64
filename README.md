@@ -21,7 +21,7 @@ ARCH="arm64" CROSS_COMPILE="aarch64-unknown-linux-gnu-" make
 - create a msdos partition table on a sd card
 - create a small boot partition formatted in vfat
 - copy official raspberry firmware files 'bootcode.bin' and 'start.elf' from [raspberrypi/firmware](https://github.com/raspberrypi/firmware/boot) into the boot partition
-- create a config.txt file that will be read by the firmware and add the following entries (for more fine tuning have a look into the [official documentation](https://www.raspberrypi.org/documentation/configuration/config-txt.md)):
+- create a config.txt file that will be read by the firmware and add the following entries (for more fine tuning have a look into the [official documentation](https://github.com/raspberrypi/documentation/blob/master/configuration/config-txt.md)):
 ```.sh
 arm_control=0x200
 kernel=u-boot.bin
