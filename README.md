@@ -12,6 +12,7 @@ crossdev -S --g 5.3.0 -t aarch64-unknown-linux-gnu
 **Compile 64-bit U-Boot**
 - use these U-Boot developer sources: [branch rpi_dev](https://github.com/swarren/u-boot.git), maybe after the next regular release in fall 2016 we can switch back to mainline
 ```.sh
+ARCH="arm64" CROSS_COMPILE="aarch64-unknown-linux-gnu-" make rpi_3_defconfig
 ARCH="arm64" CROSS_COMPILE="aarch64-unknown-linux-gnu-" make
 ```
 - we will need file 'u-boot.bin' in the next step
@@ -32,7 +33,6 @@ kernel=u-boot.bin
 - Kernel sources: [bcm2837-64-next](https://github.com/anholt/linux/tree/bcm2837-64-next)
 - see "`kernel/.config`" for kernel configuration
 ```.sh
-ARCH="arm64" CROSS_COMPILE="aarch64-unknown-linux-gnu-" make rpi_3_defconfig
 ARCH="arm64" CROSS_COMPILE="aarch64-unknown-linux-gnu-" make -j2
 ```
 - copy kernel image file "Image" and device tree blob file 'bcm2837-rpi-3-b.dtb' into the boot partition
