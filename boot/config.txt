@@ -60,5 +60,8 @@ kernel=u-boot.bin
 #dtoverlay=pi3-miniuart-bt-overlay
 #kernel_old=1
 #disable_commandline_tags=1
-#force_turbo=1
+force_turbo=1
+
+dtoverlay=vc4-kms-v3d
+
 
