@@ -1,0 +1,2 @@
+>=sys-apps/file-5.28
+>=dev-lang/python-3.4.3-r7
