@@ -57,11 +57,12 @@ dtparam=audio=on
 
 arm_control=0x200
 kernel=u-boot.bin
-#dtoverlay=pi3-miniuart-bt-overlay
+dtoverlay=pi3-miniuart-bt-overlay
 #kernel_old=1
 #disable_commandline_tags=1
 force_turbo=1
 
 dtoverlay=vc4-kms-v3d
 
+gpu_mem=64
 
